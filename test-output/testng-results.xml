@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="12480" started-at="2022-02-13T20:18:18 EST" finished-at="2022-02-13T20:18:30 EST">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.cucumber.runner.RunnerFile@6483f5ae]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Test" duration-ms="12480" started-at="2022-02-13T20:18:18 EST" finished-at="2022-02-13T20:18:30 EST">
+      <class name="com.cucumber.runner.RunnerFile">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.cucumber.runner.RunnerFile@6483f5ae]" name="setUpClass" is-config="true" duration-ms="367" started-at="2022-02-13T20:18:18 EST" finished-at="2022-02-13T20:18:18 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.cucumber.runner.RunnerFile@6483f5ae]" name="runScenario" duration-ms="10939" started-at="2022-02-13T20:18:18 EST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-02-13T20:18:29 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["As an Orbis user, can do successfull login with valid credential"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Title of your feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.cucumber.runner.RunnerFile@6483f5ae]" name="tearDownClass" is-config="true" duration-ms="1144" started-at="2022-02-13T20:18:29 EST" finished-at="2022-02-13T20:18:30 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.cucumber.runner.RunnerFile -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
