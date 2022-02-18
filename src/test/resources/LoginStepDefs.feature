@@ -1,6 +1,5 @@
 @Smoke
-Feature: Title of your feature
-  I want to use this template for my feature file
+Feature: cucumberBDD_Test
 
   @tac001_to_tc005
   Scenario: As an Orbis user, can do successfull login with valid credential
