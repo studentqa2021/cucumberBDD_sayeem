@@ -85,8 +85,6 @@ public class LoginStepDefs
 		ScreenShot.getScreenShot(driver,"Login Test status");
 		Assert.assertEquals(MPF.getLoginStatusSuccessMsg().getText(),"Login Successfully");// fail=stop
 		Assert.assertTrue(MPF.getSignOffList().get(7).isDisplayed());// stopped here
-		for(WebElement s : MPF.getSignOffList())
-			System.out.println(s.getText());
 	 }
 	 
 	@And("close browser")
