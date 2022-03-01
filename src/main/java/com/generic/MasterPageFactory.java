@@ -51,5 +51,29 @@ public class MasterPageFactory {
 	private List<WebElement> signOffList;// findElements() ==> object 8 >> get(7)
 	@FindBy(xpath = "//*[text()='Login Successfully']")
 	private WebElement loginStatusSuccessMsg;
+	@FindBy(xpath = "//*[@type = 'radio']")
+	private List<WebElement> tripType;
+	@FindBy(xpath = "//*[@name = 'passCount']")
+	private WebElement passCount;
+	@FindBy(xpath = "//*[@name = 'fromPort']")
+	private WebElement departPort;
+	@FindBy(xpath = "//*[@name = 'fromMonth']")
+	private WebElement fromMonth;
+	@FindBy(xpath = "//*[@name = 'fromDay']")
+	private WebElement fromDay;
+	@FindBy(xpath = "//*[@name = 'toPort']")
+	private WebElement arrivePort;
+	@FindBy(xpath = "//*[@name = 'toMonth']")
+	private WebElement toMonth;
+	@FindBy(xpath = "//*[@name = 'toDay']")
+	private WebElement toDay;
+	@FindBy(xpath = "//*[@name = 'servClass']")
+	private List<WebElement> flightClass;
+	@FindBy(xpath = "//*[@name = 'airline']")
+	private WebElement airline;
+	@FindBy(xpath = "//*[@name = 'findFlights']")
+	private WebElement findFlights;
+	@FindBy(xpath = "//*['/html/body/div[2]/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr[1]/td[2]/table/tbody/tr[1]/td/p/font/b/font[1]/text()']")
+	private WebElement warning;
 	
 }
