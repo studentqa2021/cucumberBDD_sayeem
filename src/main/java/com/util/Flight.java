@@ -18,9 +18,6 @@
 
 package com.util;
 
-import javax.swing.JOptionPane;
-
-import org.checkerframework.framework.qual.DefaultQualifier.List;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
