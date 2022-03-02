@@ -20,8 +20,6 @@ package com.util;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-
 import com.generic.BaseConfig;
 import com.generic.MasterPageFactory;
 
@@ -29,8 +27,7 @@ public class Flight
 {
 	MasterPageFactory MPF;
 	BaseConfig BC;
-	WebElement radio;
-	public void flightBooking(WebDriver driver) throws Exception
+	public void flightBooking(WebDriver driver) throws Throwable
 	{
 		MPF = new MasterPageFactory(driver);
 		BC = new BaseConfig();
@@ -66,5 +63,7 @@ public class Flight
 			((JavascriptExecutor)driver).executeScript("alert('No seats Available');");
 		Thread.sleep(3000);
 		driver.switchTo().alert().dismiss();
+		ScreenShot.getScreenShot(driver, "Flight-feature");
+		
 	}
 }

@@ -88,7 +88,7 @@ public class LoginStepDefs
 	 }
 	
 	@Then("click Fight URL")
-	public void Flight() throws Exception
+	public void Flight() throws Throwable
 	{
 		Flight flight = new Flight();
 		flight.flightBooking(driver);
