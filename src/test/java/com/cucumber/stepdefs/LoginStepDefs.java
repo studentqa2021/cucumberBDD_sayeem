@@ -24,6 +24,7 @@ import org.testng.Assert;
 import com.generic.BaseConfig;
 import com.generic.CrossBrowserCheck;
 import com.generic.MasterPageFactory;
+import com.util.Flight;
 import com.util.HighLighter;
 import com.util.ScreenShot;
 
@@ -85,6 +86,13 @@ public class LoginStepDefs
 		Assert.assertEquals(MPF.getLoginStatusSuccessMsg().getText(),"Login Successfully");// fail=stop
 		Assert.assertTrue(MPF.getSignOffList().get(7).isDisplayed());// stopped here
 	 }
+	
+	@Then("click Fight URL")
+	public void Flight() throws Throwable
+	{
+		Flight flight = new Flight();
+		flight.flightBooking(driver);
+	}
 	 
 	@And("close browser")
 	public void closeBrowser() throws InterruptedException 
