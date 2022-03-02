@@ -9,7 +9,7 @@ Feature: cucumberBDD_Test
     And put valid password "<pass>"
     And click signin button
     Then login should be successfull and showed sign out button
-    #Then click Fight URL
+    Then click Fight URL
     And close browser
     
     
