@@ -31,30 +31,28 @@ import com.util.ScreenShot;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class LoginStepDefs 
-{
+public class LoginStepDefs {
 	BaseConfig BC = new BaseConfig();
 	HighLighter highLighter = new HighLighter();
 	WebDriver driver;
 	
-	@Given("Open browser")
+	@Given("Open Browser")
 	public void getbrowser() {
 		
 		WebDriverManager.chromedriver().setup();
 		driver = CrossBrowserCheck.browserCheck("chrome");
 	}
 
-	@And("go to application URL {string}")
+	@Then("go to application URL {string}")
 	public void getURL(String url) throws Exception
 	{
 		driver.get(BC.getValue(url));
 		driver.manage().window().maximize();
 	}
 
-	@When("put valid username {string}")
+	@And("put valid username {string}")
 	public void getUsername(String user) throws Exception
 	{
 		MasterPageFactory MPF = new MasterPageFactory(driver);
@@ -66,11 +64,11 @@ public class LoginStepDefs
 	public void getPassword(String pass) throws Exception
 	{
 		MasterPageFactory MPF = new MasterPageFactory(driver);
-		//highLighter.getColor(driver, MPF.getPassword(),"Olive");
+		highLighter.getColor(driver, MPF.getPassword(),"Olive");
 		MPF.getPassword().sendKeys(BC.getValue(pass));
 	}
 
-	@And("click signin button")
+	@Then("click signin button")
 	public void clickSignin() 
 	{
 		MasterPageFactory MPF = new MasterPageFactory(driver);
@@ -78,7 +76,7 @@ public class LoginStepDefs
 		MPF.getSubmit().click();
 	}
 
-	@Then("login should be successfull and showed sign out button") 
+	@Then("login should be successful and showed sign out button") 
 	public void checkSigninvalidation() throws Throwable 
 	{ 
 		MasterPageFactory MPF = new MasterPageFactory(driver);

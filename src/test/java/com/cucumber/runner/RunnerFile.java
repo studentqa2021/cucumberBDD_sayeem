@@ -30,7 +30,7 @@ import io.cucumber.testng.CucumberOptions;
 		},
 		
 		features = {"src/test/resources/LoginStepDefs.feature" },//path	
-		glue = { "com.cucumber.stepdefs" }//stepdef package name		
+		glue = { "com.cucumber.stepdefs" }//stepdefs package name		
 
 			
 			

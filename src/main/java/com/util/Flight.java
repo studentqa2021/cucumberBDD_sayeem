@@ -33,7 +33,7 @@ public class Flight
 		BC = new BaseConfig();
 		MPF.getSignOffList().get(1).click();
 		Thread.sleep(3000);
-		if(BC.getValue("triptype").toLowerCase().equals("oneway"))
+		if(BC.getValue("triptype").equalsIgnoreCase("oneway"))
 		{
 		MPF.getTripType().get(1).click();
 		}
@@ -44,11 +44,11 @@ public class Flight
 		MPF.getArrivePort().sendKeys(BC.getValue("arrive").toLowerCase());
 		MPF.getToMonth().sendKeys(BC.getValue("arriveMonth"));
 		MPF.getToDay().sendKeys(BC.getValue("arriveday"));
-		if(BC.getValue("flightClass").toLowerCase().equals("business class"))
+		if(BC.getValue("flightClass").equalsIgnoreCase("business class"))
 		{
 		MPF.getFlightClass().get(1).click();
 		}
-		else if(BC.getValue("flightClass").toLowerCase().equals("first class"))
+		else if(BC.getValue("flightClass").equalsIgnoreCase("first class"))
 		{
 		MPF.getFlightClass().get(2).click();
 		}
